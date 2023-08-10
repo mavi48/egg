@@ -30,8 +30,19 @@ public class HerenciaExtrasEj2 {
         for(Edificio edificiox: edificioslist ) {
             System.out.println("La superficie es: " + edificiox.calcularSuperficie());
             System.out.println("El volumen es: " + edificiox.calcularVolumen());
+           
+           if (edificiox instanceof Polideportivo) {
+                Polideportivo poli = (Polideportivo) edificiox;
+                System.out.println(" nombre" + poli.getNombre());
+                System.out.println("tipo de instalacion " + poli.getTipoInstalacion());
+                System.out.println("-------------------------------");
+            }
+        }
+
+        Edificio1.calcularPersonas();
+        System.out.println("----------------------------"); 
         }
     
     }
     
-}
+
